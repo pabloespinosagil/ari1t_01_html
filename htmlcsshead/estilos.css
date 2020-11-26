@@ -1,0 +1,86 @@
+body{
+	text-align:center;
+	background-color:#EDEED9;
+		}
+#tabla_skateboard {
+	display:inline-block;
+	width:25%;
+	height:750px;
+	text-align:left;
+	border:1px solid black;
+	}
+#tablacompaneros {
+	display:inline-block;
+	width:25%;
+	/*height:800px;*/
+	text-align:left;
+	border:1px solid black;
+	}
+	
+#tabla_espana {
+	width:25%;
+	display:inline-block;
+	border:1px solid black;
+	}
+tr #trtabla_skateboard {
+	text-align:center;
+	font-size:2em;
+	}
+td	#tdtabla_formulario {
+	margin-top: 0em;
+	}
+img	#skateboard {
+	height:288px;
+	}
+#span1 {
+	font-weight:bold;
+	}
+#span2 {
+	font-style:italic;
+	}
+#span3 {
+	text-decoration:underline;
+	}
+#ollistacompaneros {
+	text-align;
+	}
+#tdtabla_espana1 {
+	background-color:#809287;
+	width:160px;
+	}
+#div1 {
+	height:4em;
+	text-align:center;
+	}
+#div2 {
+	height:4em;
+	text-align:center;
+	}
+#div3 {
+	height:4em;
+	text-align:center;
+	}
+#div4 {
+	height:4em;
+	text-align:center;
+	}
+#tdtabla_espana2 {
+	width:300px;
+	background-color:#C8CA99;
+	}
+#div5 {
+	height:4em;
+	text-align:center;
+	}
+#div6 {
+	height:4em;
+	text-align:center;
+	}
+#div7 {
+	height:4em;
+	text-align:center;
+	}
+#div8 {
+	height:4em;
+	text-align:center;
+	}
