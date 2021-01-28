@@ -1,0 +1,32 @@
+De entre todos los triánculos rectángulos de área 8 cm2, determina las dimensiones del que tiene la hipotenusa de menor longitud
+
+<div>
+<form>
+<input id="r" name="r" placeholder="radio" onkeyup="calcular()"/>
+<input id="s" name="s" placeholder="sendero" onkeyup="calcular()"/>
+<button onclick="calcular()">Calcular</button>
+</form>
+</div>
+<div id="resultado" style="
+	padding:30px;
+	background-color:pink;
+">
+</div>
+<script>
+
+console.log('Vamos a calcular la intensidad que circula por una resistencia');
+function calcular(){
+
+r=document.getElementById('r').value;
+s=document.getElementById('s').value;
+r=parseInt(r);
+s=parseInt(s);
+R=r+s;
+A=Math.round(Math.PI*(R*R))-(Math.PI*(r*r));
+document.getElementById('resultado').innerHTML=A+'M2';
+}
+alert('hey!! pulsa aqui');
+</script> 
+<?php
+print_r($_GET);
+?>
