@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Muntiplicar</title>
+		
+		
+    </head>
+    <body>
+	
+		<form>
+			<input id="numero1" name="numero1" readonly />
+			<input id="numero2" name="numero2" readonly /> 
+			<input id="resultado" name="resultado"/>
+			<input type="submit" onclick="multiplicar()"></input>
+		</form>
+		<p id="contador"></p>
+		<p id="bienMal"></p>
+
+	</body>
+	<script>
+		var contador=0; 
+		random();
+		function multiplicar(){
+			var n1 = document.getElementById("numero1").value;
+			var n2 = document.getElementById("numero2").value;
+			var resultado = document.getElementById("resultado").value;
+			var resultadoReal = n1*n2;
+			if (resultado == resultadoReal){
+				contador++;
+				document.getElementById("bienMal").innerHTML = "correcto";
+			} else {
+				contador = 0;
+				document.getElementById("bienMal").innerHTML = "incorrecto";
+			}
+			document.getElementById("contador").innerHTML = contador;
+			random();
+		}
+		function random () {
+			var v1 = Math.floor(Math.random() * 10); 
+			var v2 = Math.floor(Math.random() * 10);
+			document.getElementById("numero1").value = v1;
+			document.getElementById("numero2").value = v2;
+			document.getElementById("resultado").value = "";
+		}
+		</script>
+</html>
+
+<?php 
+
+if(!isset($_GET['contador']))
+	$_GET['contador']=0;
+if (isset($_GET['r'])){
+	if($_GET['r']!=$_GET['resultado']){
+		echo 'mal';
+		$_GET['contador']=0;
+	}
+	else{
+			echo 'bien'; $_GET['contador']++;
+	} 
+}
+
+echo '<div>'. $_GET['contador'].'</div>';
+$a= rand(1,10);
+$b= rand(1,10); 
+echo $a.' x '.$b.' = ';
+
+
+?>
+
+<form>
+	<input id="r" name="r"/>
+	<input type="hidden" name="resultado" value="<?=($a*$b)?>"/>
+	<input type="hidden" name="contador" value="<?=$_GET['contador']?>"/>
+	<button>enviar</button>
+</form>
+
+<script> 

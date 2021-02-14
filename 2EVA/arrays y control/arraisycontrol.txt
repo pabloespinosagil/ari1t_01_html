@@ -1,0 +1,9 @@
+Crea un array con el nombre de tus compañeros y selecciona uno de ellos al azar
+el nombre de un cpmpanero al azar cada vez que recargue la pagina
+
+Muestra el listado ordenado de meses que contengan la letra R
+un listado q aparezcan los meses ordenados
+
+Crea una aplicación web para repasar la tabla de multiplicar haciendo uso de un array y un formulario
+cojo 2 numero al azar del 1 al 10  5x7 y dentro de un cajon sale 35
+y cada vez que fallas te ponen las respuestas falladas y cada vez que aciertas las que llevas 
